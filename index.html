@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Grid</title>
+         <style>
+            body{
+                background: linear-gradient(300deg, black, rgb(204,235,255),rgb(0,77,128),black);
+            }
+			#div01{
+				height: 60vh;
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-rows: 1fr 1fr 1fr;
+				width: 500px;
+				margin-top: 50px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+
+			.items{
+				background-color: skyblue;
+				border: 2px solid black;
+				margin: 3px;
+
+			}
+			
+			#item01{
+				grid-column: span 2;
+			}
+
+			#item02{
+				grid-row: span 2;
+			}
+
+		</style>
+
+    </head>
+    <body>        
+            <div id="div01">
+                <div class="items" id="item01"></div>
+                <!-- <div class="items"></div> -->
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items" id="item02"></div>
+                <!-- <div class="items"></div> -->
+                <div class="items"></div>
+                <div class="items"></div>
+                
+        </div>
+    </body>
+</html>
